@@ -1,0 +1,26 @@
+{{> navbar}}
+<br/>
+
+<div class="row">
+    <div class="col-3">
+
+        <h1>Producto: {{product.title}}</h1>
+        <a href="/">Volver al listado</a>
+
+    </div>
+    <div class="col-9">
+        <div class="container">
+            <div >
+                <div class="d-flex justify-content-center w-100">
+                    <div class="card">
+                        <img src="{{product.thumbnail}}" alt="{{product.title}}">
+                        <div class="card-body">
+                        <h3>{{product.title}}</h3>
+                        <p class="badge bg-success">$ {{product.price}}</p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+</div>
